@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, Times, 'Times New Roman', serif ;
+}
+
+body {
+    background-image: linear-gradient(to bottom right, salmon, rgb(255, 183, 175));
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0 8px 4px rgba(0, 0, 0, 0.1);
+}
+.title a{
+    text-decoration: none;
+    color: black;
+    font-size: 3em;
+}
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0 8px 4px rgba(0, 0, 0, 0.1);
+    height: 85vh;
+}
+
+section {
+    background-color: rgb(233, 132, 125);
+    width: calc(50% - 180px);
+    height: 25vh;
+    margin: 5vh 1vw;
+    overflow: hidden;
+    box-shadow: 0 8px 4px rgba(0, 0, 0, 0.1);
+}
+
+section h2{
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+section p {
+    font-size: 1.2em;
+    height: 100%;
+
+}
