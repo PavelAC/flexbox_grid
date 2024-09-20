@@ -49,3 +49,34 @@ section p {
     height: 100%;
 
 }
+
+
+footer {
+    background-image: linear-gradient(to bottom right, rgb(255, 183, 175), salmon);
+    color: #fff; 
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.footer-social {    
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
