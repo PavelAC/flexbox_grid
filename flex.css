@@ -80,3 +80,54 @@ footer {
     width: 30px;
     height: 30px;
 }
+
+@media (max-width: 964px) {
+    .title a {
+        font-size: 2.5em;   
+    }
+
+    section {
+        width: calc(50% - 100px); 
+        height: 20vh;  
+    }
+}
+
+@media (max-width: 576px) {
+    .title a {
+        font-size: 2em;    
+    }
+
+    .content {
+        flex-direction: column;   
+        height: auto;  
+    }
+
+    section {
+        width: 90%;        
+        height: auto;      
+        margin: 10px 0;    
+    }
+
+    section h2 {
+        font-size: 1.8em;  
+    }
+
+    section p {
+        font-size: 1em;    
+    }
+
+    .footer-container {
+        flex-direction: column;  
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-social {
+        margin-bottom: 20px;  
+    }
+
+    .social-icons img {
+        width: 25px;   
+        height: 25px;
+    }
+}
