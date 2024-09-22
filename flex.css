@@ -87,8 +87,11 @@ footer {
     }
 
     section {
-        width: calc(50% - 100px); 
+        width: calc(50% - 60px); 
         height: 20vh;  
+    }
+    section:hover {
+        overflow: auto;
     }
 }
 

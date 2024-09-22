@@ -48,7 +48,7 @@ body {
 .section4 {
     grid-area: section4;
     margin-right: 148px;
-}
+}   
 
 section {
     background-color: rgb(233, 132, 125);
@@ -98,4 +98,86 @@ footer {
     width: 30px;
     height: 30px;
     object-fit: cover;        
+}
+
+@media (max-width: 964px) {
+    .title a {
+        font-size: 2.5em;   
+    }
+
+    section {
+        width: calc(100% - 50px); 
+        height: 20vh;  
+    }
+    section:hover {
+        overflow: auto;
+    }
+
+    .section1 {
+        grid-area: section1;
+        margin-left: 38px;
+    }
+    .section2 {
+        grid-area: section2;
+        margin-right: 38px;
+    }
+    .section3 {
+        grid-area: section3;
+        margin-left: 38px;
+    }
+    .section4 {
+        grid-area: section4;
+        margin-right: 38px;
+    }  
+
+}
+
+@media (max-width: 576px) {
+    .title a {
+        font-size: 2em;    
+    }
+
+    .content {
+        display: grid;
+        grid-template-areas: 
+        "section1"
+        "section2"
+        "section3"
+        "section4";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        height: auto;
+        
+    }
+    .section1, .section2, .section3, .section4 {
+        margin: 0;        
+    }
+    section {
+        width: 90%;        
+        height: calc(100% - 20px);
+        margin: 10px 0;    
+    }
+
+    section h2 {
+        font-size: 1.8em;  
+    }
+
+    section p {
+        font-size: 1em;    
+    }
+
+    .footer-container {
+        display: grid;
+        place-items: center;
+    }
+    
+    
+    .footer-social {
+        margin-bottom: 20px;  
+    }
+
+    .social-icons img {
+        width: 25px;   
+        height: 25px;
+    }
 }
